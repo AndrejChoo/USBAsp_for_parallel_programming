@@ -1,0 +1,587 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                              c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o (exit)
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                              usbdrv/usbdrv.o (__do_copy_data)
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                              usbdrv/usbdrv.o (__do_clear_bss)
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              clock.o (__ltsf2)
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              clock.o (__floatsisf)
+c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+usbTxBuf            0xb               usbdrv/usbdrv.o
+low_byte            0x1               isp.o
+tpi_dly_cnt         0x2               tpi.o
+prog_pagecounter    0x1               main.o
+usbDeviceAddr       0x1               usbdrv/usbdrv.o
+usbRxToken          0x1               usbdrv/usbdrv.o
+usbInputBufOffset   0x1               usbdrv/usbdrv.o
+sck_spsr            0x1               isp.o
+ispTransmit         0x2               isp.o
+dev_type            0x1               isp.o
+sck_spcr            0x1               isp.o
+usbMsgPtr           0x2               usbdrv/usbdrv.o
+isp_hiaddr          0x1               isp.o
+usbRxLen            0x1               usbdrv/usbdrv.o
+usbNewDeviceAddr    0x1               usbdrv/usbdrv.o
+prog_pagesize       0x2               main.o
+usbCurrentTok       0x1               usbdrv/usbdrv.o
+usbConfiguration    0x1               usbdrv/usbdrv.o
+usbRxBuf            0x16              usbdrv/usbdrv.o
+sck_sw_delay        0x1               isp.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000002         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+LOAD usbdrv/usbdrv.o
+LOAD usbdrv/usbdrvasm.o
+LOAD usbdrv/oddebug.o
+LOAD isp.o
+LOAD clock.o
+LOAD tpi.o
+LOAD main.o
+START GROUP
+LOAD c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a
+LOAD c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libatmega16.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x18f4
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data  0x00000054       0x52 usbdrv/usbdrv.o
+                0x00000054                usbDescriptorConfiguration
+                0x00000066                usbDescriptorDevice
+                0x00000078                usbDescriptorStringDevice
+                0x00000086                usbDescriptorStringVendor
+                0x000000a2                usbDescriptorString0
+                0x000000a6                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000a6                __ctors_start = .
+ *(.ctors)
+                0x000000a6                __ctors_end = .
+                0x000000a6                __dtors_start = .
+ *(.dtors)
+                0x000000a6                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000a6        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+                0x000000a6                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000a6        0xc c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000b2       0x16 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                0x000000b2                __do_copy_data
+ .init4         0x000000c8       0x10 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                0x000000c8                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000d8        0x8 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+ *(.init9)
+ *(.text)
+ .text          0x000000e0        0x4 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+                0x000000e0                __vector_12
+                0x000000e0                __bad_interrupt
+                0x000000e0                __vector_6
+                0x000000e0                __vector_3
+                0x000000e0                __vector_11
+                0x000000e0                __vector_13
+                0x000000e0                __vector_17
+                0x000000e0                __vector_19
+                0x000000e0                __vector_7
+                0x000000e0                __vector_5
+                0x000000e0                __vector_4
+                0x000000e0                __vector_9
+                0x000000e0                __vector_2
+                0x000000e0                __vector_15
+                0x000000e0                __vector_8
+                0x000000e0                __vector_14
+                0x000000e0                __vector_10
+                0x000000e0                __vector_16
+                0x000000e0                __vector_18
+                0x000000e0                __vector_20
+ .text          0x000000e4      0x28c usbdrv/usbdrv.o
+                0x000000e4                usbPoll
+                0x00000362                usbInit
+ .text          0x00000370      0x25a usbdrv/usbdrvasm.o
+                0x00000370                usbCrc16
+                0x0000039a                usbCrc16Append
+                0x000003a2                __vector_1
+ .text          0x000005ca        0x0 usbdrv/oddebug.o
+ .text          0x000005ca      0xa0a isp.o
+                0x00000680                avr_reset
+                0x00000692                puls_xt1
+                0x000006a8                avr_serialExchange
+                0x00000742                avr_bsySerial
+                0x00000778                avr_loadComm
+                0x00000786                avr_loadAdd
+                0x00000794                avr_getId
+                0x000007f0                avr_progMode
+                0x00000934                avr_getFuse
+                0x00000a20                avrSetFuse
+                0x00000b88                avr_erase
+                0x00000bbc                spiHWenable
+                0x00000bbe                ispSetSCKOption
+                0x00000bda                ispDelay
+                0x00000bea                ispConnect
+                0x00000c02                ispDisconnect
+                0x00000c12                ispTransmit_sw
+                0x00000c16                ispTransmit_hw
+                0x00000c1a                ispEnterProgrammingMode
+                0x00000c1e                ispReadFlash
+                0x00000d0c                ispWriteFlash
+                0x00000e32                ispFlushPage
+                0x00000eec                ispReadEEPROM
+                0x00000f7a                ispWriteEEPROM
+ .text          0x00000fd4       0x3c clock.o
+                0x00000fd4                clockWait
+ .text          0x00001010       0xd2 tpi.o
+                0x00001010                tpi_init
+                0x00001030                tpi_send_byte
+                0x00001076                tpi_recv_byte
+                0x000010a8                tpi_read_block
+                0x000010bc                tpi_write_block
+ .text          0x000010e2      0x72e main.o
+                0x000010e2                usbFunctionSetup
+                0x0000152a                usbFunctionRead
+                0x00001630                usbFunctionWrite
+                0x000017e0                hardwareInit
+                0x00001808                usbHadReset
+                0x0000180c                usbAddressAssigned
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00001810        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00001810                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x00001810       0x14 main.o
+                0x00001810                main
+ .text.libgcc.mul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00001824        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc.fplib
+                0x00001824        0xa c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x00001824                __nesf2
+                0x00001824                __eqsf2
+                0x00001824                __cmpsf2
+                0x00001824                __ltsf2
+                0x00001824                __lesf2
+ .text.avr-libc.fplib
+                0x0000182e       0x7a c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x0000182e                __floatunsisf
+                0x00001832                __floatsisf
+ .text.avr-libc.fplib
+                0x000018a8       0x48 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x000018a8                __fp_cmp
+                0x000018f0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000018f0        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x000018f0                _exit
+                0x000018f0                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000018f0        0x4 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000018f4                _etext = .
+
+.data           0x00800060        0x2 load address 0x000018f4
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+ .data          0x00800060        0x2 usbdrv/usbdrv.o
+                0x00800061                usbTxLen
+ .data          0x00800062        0x0 usbdrv/usbdrvasm.o
+ .data          0x00800062        0x0 usbdrv/oddebug.o
+ .data          0x00800062        0x0 isp.o
+ .data          0x00800062        0x0 clock.o
+ .data          0x00800062        0x0 tpi.o
+ .data          0x00800062        0x0 main.o
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800062                . = ALIGN (0x2)
+                0x00800062                _edata = .
+                0x00800062                PROVIDE (__data_end, .)
+
+.bss            0x00800062       0x4b
+                0x00800062                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800062        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+ .bss           0x00800062        0x2 usbdrv/usbdrv.o
+ .bss           0x00800064        0x0 usbdrv/usbdrvasm.o
+ .bss           0x00800064        0x0 usbdrv/oddebug.o
+ .bss           0x00800064        0x0 isp.o
+ .bss           0x00800064        0x0 clock.o
+ .bss           0x00800064        0x0 tpi.o
+ .bss           0x00800064       0x12 main.o
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00800076        0x0 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800076       0x2a usbdrv/usbdrv.o
+                0x00800076                usbTxBuf
+                0x00800081                usbDeviceAddr
+                0x00800082                usbRxToken
+                0x00800083                usbInputBufOffset
+                0x00800084                usbMsgPtr
+                0x00800086                usbRxLen
+                0x00800087                usbNewDeviceAddr
+                0x00800088                usbCurrentTok
+                0x00800089                usbConfiguration
+                0x0080008a                usbRxBuf
+ COMMON         0x008000a0        0x8 isp.o
+                0x008000a0                low_byte
+                0x008000a1                sck_spsr
+                0x008000a2                ispTransmit
+                0x008000a4                dev_type
+                0x008000a5                sck_spcr
+                0x008000a6                isp_hiaddr
+                0x008000a7                sck_sw_delay
+ COMMON         0x008000a8        0x2 tpi.o
+                0x008000a8                tpi_dly_cnt
+ COMMON         0x008000aa        0x3 main.o
+                0x008000aa                prog_pagecounter
+                0x008000ab                prog_pagesize
+                0x008000ad                PROVIDE (__bss_end, .)
+                0x000018f4                __data_load_start = LOADADDR (.data)
+                0x000018f6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000ad        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008000ad                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 usbdrv/usbdrv.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 usbdrv/oddebug.o
+ .comment       0x00000030       0x31 isp.o
+ .comment       0x00000030       0x31 clock.o
+ .comment       0x00000030       0x31 main.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x52e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x52e c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+
+.debug_abbrev   0x00000000      0x4e7
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x4e7 c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+
+.debug_line     0x00000000       0x1a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x1af
+ *(.debug_str)
+ .debug_str     0x00000000      0x1af c:/avr8-gnu-toolchain_for_eclipse/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega16.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(main.bin elf32-avr)
+LOAD linker stubs
